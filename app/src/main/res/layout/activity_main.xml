@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.yourdomain.yourapp.SurfaceViewDSP
+        android:id="@+id/surfaceViewDSP"
+        android:layout_width="400dp"
+        android:layout_height="209dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerAudioInput" />
+
+    <Spinner
+        android:id="@+id/spinnerAudioInput"
+        android:layout_width="395dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Spinner
+        android:id="@+id/spinnerMidiOutputDevice"
+        android:layout_width="395dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerProcessingMode" />
+
+    <Spinner
+        android:id="@+id/spinnerMidiOutputChannel"
+        android:layout_width="179dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerMidiOutputPatch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerMidiOutputDevice" />
+
+    <Spinner
+        android:id="@+id/spinnerMidiOutputPatch"
+        android:layout_width="179dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerMidiOutputDevice" />
+
+    <Button
+        android:id="@+id/buttonStartStopRecording"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="160dp"
+        android:onClick="onClickStartStopButton"
+        android:text="@string/button_main_act_start_recording"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerProcessingMode" />
+
+    <Spinner
+        android:id="@+id/spinnerProcessingMode"
+        android:layout_width="380dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/spinnerMidiOutputDevice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surfaceViewDSP" />
+
+    <TextView
+        android:id="@+id/textViewBottomInfo"
+        android:layout_width="403dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStartStopRecording"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonOpenFile"
+        android:layout_width="179dp"
+        android:layout_height="47dp"
+        android:onClick="onClickOpenFile"
+        android:text="Open..."
+        app:layout_constraintBottom_toTopOf="@+id/textViewBottomInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toEndOf="@+id/buttonStartStopRecording"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerProcessingMode"
+        app:layout_constraintVertical_bias="0.993" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

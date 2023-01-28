@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Starter DSP App</string>
+    <string name="button_main_act_start_recording">START RECORDING</string>
+    <string name="button_main_act_stop_recording">STOP RECORDING</string>
+    <string name="button_main_act_record_need_permissions">NEED PERMISSION!</string>
+    <string name="toast_record_permissions">Do you grant permission for this app to record audio?</string>
+    <string name="processing_mode_0_raw_audio">Raw Audio</string>
+    <string name="processing_mode_1_magnitude_spectrum">Frequency Magnitude Spectrum</string>
+    <string name="processing_mode_2_autocorrelation">Autocorrelation</string>
+    <string name="processing_mode_2_pitch_estimate">Pitch Estimate</string>
+
+    <string name="main_copyright">Copyright (C) esocodes.com</string>
+    <string name="audio_need_rec_permission">Need audio recording permission.</string>
+    <string name="audio_need_rec_permission_denied">Audio recording permission denied.</string>
+
+    <!-- This is an ad unit ID for a test ad. Replace with your own banner ad unit id. -->
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="switch_oboe_exclusive">Exclusive</string>
+    <string name="switch_oboe_api_aaudio">AAudio</string>
+    <string name="switch_oboe_api_opengles">OpenGL ES</string>
+
+    <string name="spinOutputNothingAvail">Nothing available</string>
+    <string name="spinOutputSelectNoMidiOut"></string>
+    <string name="spinOutputNoProd"></string>
+    <string name="tvNfo_Status_HasMidiOuts"></string>
+    <string name="tvNfo_Status_TestForMidi"></string>
+    <string name="spinOutputNoName"></string>
+    <string name="spinOutputNoManu"></string>
+</resources>
