@@ -6,7 +6,6 @@ droidRealtimeMidiTriggerProto001
 
 https://github.com/drj88/droidRealtimeMidiTriggerProto001
 
-
 Sandbox-stage of development for real-time midi vocal trigger with simple Autocorrelation-based tracking but realtime performance for Android SDK 23 (targets 33) and up with Oboe NDK 25.1.8937393 via JNI.
 
 from failed Kikcstarter Campaign called PITCHIN (https://www.kickstarter.com/projects/thecodesorcerer/pitchin)
