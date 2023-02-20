@@ -39,7 +39,7 @@ extern "C" {
 //        recorder.setWavPath("/sdcard/dump/recorder.wav");
 //        recorder.setWavPath("/storage/emulated/0/dump/recorder.wav");
 //        recorder.setWavPath("/data/local/tmp/recorder.wav");
-        recorder.setWavPath("/data/data/com.yourdomain.yourapp/recorder.wav");
+        //recorder.setWavPath("/data/data/com.yourdomain.yourapp/recorder.wav");
         return (int) recorder.start();
     }
 

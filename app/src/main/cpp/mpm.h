@@ -1,5 +1,17 @@
 #pragma once
 
+/**
+ * This code was altered from https://github.com/sevagh/pitch-detection
+ *
+ * Pitch detection algorithms
+ * Autocorrelation-based C++ pitch detection algorithms with O(nlogn) or lower running time
+ *
+ * https://github.com/sevagh
+ * Sevag H
+ * sevagh
+ * MIT License
+ */
+
 #include <algorithm>
 #include <complex>
 #include <float.h>
